@@ -1,0 +1,70 @@
+body{
+	background-color: #F4F3F1;
+}
+.main-container{
+	width: 1010px;
+	margin: 0 auto;
+}
+.wrapper-content {
+ 	padding: 20px 10px 40px;
+}
+.panel-heading>h5{
+	padding: 3px 0;
+  	margin: 0;
+}
+.search-container {
+  background-color: #D8DBDF;
+  padding: 15px 0;
+  margin: 50px 0 15px 0;
+}
+.search-input {
+  	position: relative;
+  	width: 1010px;
+	margin: 0 auto;
+}
+.search-input >input{
+	padding: 7px 10px;
+  border: 1px solid #A3A69D;
+  background-color: #fff;
+  font-family: inherit;
+  width: 100%;
+  border-radius: 3px;
+  -webkit-appearance: none;
+  -webkit-box-shadow: 0 1px 3px rgba(90, 94, 84, 0.2) inset;
+  -moz-box-shadow: 0 1px 3px rgba(90, 94, 84, 0.2) inset;
+  box-shadow: 0 1px 3px rgba(90, 94, 84, 0.2) inset;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.15s ease-out 0s;
+  -moz-transition: all 0.15s ease-out 0s;
+  transition: all 0.15s ease-out 0s;	
+}
+.search-input >span {
+    position: absolute;
+  background: #7BAB55;
+  padding: 8px 18px;
+  right: 1px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.search-input >span>i {
+  color:#fff;
+}
+/*** customized css ***/
+.navbar-inverse {
+  background-color: #293D57;
+  border-color: #12151F;
+}
+.panel-info {
+  border-color: #B9BFC3;
+  border-top-color: #ABB5BD;
+}
+.panel-info>.panel-heading {
+  color: #48627C;
+  background-color: #ECEFF0;
+  border-left: 0;
+  border-top: 4px solid #ABB5BD;
+  border-bottom: 1px dashed #CACFD2;
+  border-right: 0;
+}
