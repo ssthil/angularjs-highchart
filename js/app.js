@@ -1,13 +1,15 @@
 var app = angular.module('MyProfile',["highcharts-ng"]);
 //chart one
 app.controller('Chart1Ctrl', function($scope){
-	$scope.title = "Browser market shares January, 2015 to May, 2015";
+	$scope.title = "My Daily Activities";
 	$scope.chartConfig = {
         options: {
             chart: {
             	type: 'pie'
-        	} 
+        	},
+            colors:['#D90B83','#365096','#6F9451','#E8901C','#2CD1D1']
         },
+
         title: {
             text: ''
         },
@@ -28,62 +30,53 @@ app.controller('Chart1Ctrl', function($scope){
             }
         },
         series: [{
-            name: "Brands",
             colorByPoint: true,
             data: [{
-                name: "IE",
-                y: 56.33
+                name: "Work",
+                y: 11
             }, {
-                name: "Chrome",
-                y: 24.03
+                name: "Eat",
+                y: 2
             }, {
-                name: "Firefox",
-                y: 10.38
+                name: "Commute",
+                y: 2
             }, {
-                name: "Safari",
-                y: 4.77
+                name: "Watch TV",
+                y: 2
             }, {
-                name: "Opera",
-                y: 0.91
-            }, {
-                name: "others",
-                y: 0.2
+                name: "Sleep",
+                y: 7
             }]
         }]
     };
 });
 //chart 2
 app.controller('Chart2Ctrl', function($scope){
-	$scope.title = "Monthly Average Rainfall";
+	$scope.title = "Population of Largest U.S. Cities";
 	$scope.chartConfig={
 		options:{
 			chart:{
-				type:'column'
+				type:'bar'
 			},
+            colors:['#04B2C9','#E33805','#FCD217','#7437A6','#2CD1D1'],
 			title: {
             	text: ''
         	},
 			 xAxis: {
             categories: [
-                'Jan',
-                'Feb',
-                'Mar',
-                'Apr',
-                'May',
-                'Jun',
-                'Jul',
-                'Aug',
-                'Sep',
-                'Oct',
-                'Nov',
-                'Dec'
+                'Jan 2010',
+                'Jan 2011',
+                'Jan 2012',
+                'Jan 2013',
+                'Jan 2014'
+                
             ],
             crosshair: true
         },
         	yAxis: {
             min: 0,
             title: {
-                text: 'Total fruit consumption'
+                text: ''
             },
             stackLabels: {
                 enabled: true,
@@ -100,20 +93,20 @@ app.controller('Chart2Ctrl', function($scope){
             }
         },
 		series: [{
-            name: 'Tokyo',
-            data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4]
+            name: 'New York City, NY',
+            data: [1499, 1715, 1064, 1292]
 
         }, {
-            name: 'New York',
-            data: [83.6, 78.8, 98.5, 93.4, 106.0, 84.5, 105.0, 104.3, 91.2, 83.5, 106.6, 92.3]
+            name: 'Los Angeles, CA',
+            data: [1836, 1788, 1985, 1934]
 
         }, {
-            name: 'London',
-            data: [48.9, 38.8, 39.3, 41.4, 47.0, 48.3, 59.0, 59.6, 52.4, 65.2, 59.3, 51.2]
+            name: 'Chicago, IL',
+            data: [1489, 1388, 3193, 4114]
 
         }, {
-            name: 'Berlin',
-            data: [42.4, 33.2, 34.5, 39.7, 52.6, 75.5, 57.4, 60.4, 47.6, 39.1, 46.8, 51.1]
+            name: 'Houston, TX',
+            data: [4224, 3232, 3415, 3197]
 
         }]
 	};
@@ -127,6 +120,7 @@ app.controller('Chart3Ctrl', function($scope){
 				type:'spline',
 				inverted: true
 			},
+            colors:['#09BD60'],
 			title:{
 				text: 'e'
 			},
@@ -172,12 +166,13 @@ app.controller('Chart3Ctrl', function($scope){
 });
 //chart 4
 app.controller('Chart4Ctrl', function($scope){
-	$scope.title = "Fruits data";
+	$scope.title = "Fruits Consumption";
 	$scope.chartConfig={
 		options:{
 			chart:{
 				type:'column'
 			},
+            colors:['#04B2C9','#F78A74','#D9E84F'],
 			title:{
 				text:""
 			},
@@ -204,13 +199,13 @@ app.controller('Chart4Ctrl', function($scope){
             }
         },
 		series: [{
-            name: 'John',
+            name: 'Senthil',
             data: [5, 3, 4, 7, 2]
         }, {
-            name: 'Jane',
+            name: 'Surya',
             data: [2, 2, 3, 2, 1]
         }, {
-            name: 'Joe',
+            name: 'Swasthika',
             data: [3, 4, 4, 2, 5]
         }]
 	};

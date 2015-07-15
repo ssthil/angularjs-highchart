@@ -19,8 +19,7 @@ body{
 }
 .search-input {
   	position: relative;
-  	width: 1010px;
-	margin: 0 auto;
+  	
 }
 .search-input >input{
 	padding: 7px 10px;
@@ -50,21 +49,4 @@ body{
 }
 .search-input >span>i {
   color:#fff;
-}
-/*** customized css ***/
-.navbar-inverse {
-  background-color: #293D57;
-  border-color: #12151F;
-}
-.panel-info {
-  border-color: #B9BFC3;
-  border-top-color: #ABB5BD;
-}
-.panel-info>.panel-heading {
-  color: #48627C;
-  background-color: #ECEFF0;
-  border-left: 0;
-  border-top: 4px solid #ABB5BD;
-  border-bottom: 1px dashed #CACFD2;
-  border-right: 0;
 }

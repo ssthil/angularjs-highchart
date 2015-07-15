@@ -1,0 +1,38 @@
+/*** customized css ***/
+.navbar-inverse {
+  background-color: #293D57;
+  border-color: #12151F;
+}
+.panel-info {
+  border-color: #B9BFC3;
+  border-top-color: #ABB5BD;
+}
+.panel-info>.panel-heading {
+  color: #48627C;
+  background-color: #ECEFF0;
+  border-left: 0;
+  border-top: 4px solid #ABB5BD;
+  border-bottom: 1px dashed #CACFD2;
+  border-right: 0;
+}
+.navbar-inverse .navbar-brand {
+  font-family: 'Oswald', serif;
+  color: #13B7F2;
+  font-size: 24px;
+}
+.navbar-inverse .navbar-brand >span{
+  font-family: 'Montserrat', serif;
+  color: #FFB836;
+  font-size: 30px;
+}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+  color: #fff;
+  background-color: #385E89;
+}
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
+  color: #fff;
+  background-color: #385E89;
+}
+.navbar-inverse .navbar-nav>li>a {
+  color: #389BC7;
+}
