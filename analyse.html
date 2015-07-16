@@ -26,8 +26,8 @@
             </div>
             <div id="navbarCollapse" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Dashboard</a></li>
-                <li><a href="analyse.html">Analyse</a></li>
+                <li><a href="index.html">Dashboard</a></li>
+                <li class="active"><a href="#">Analyse</a></li>
             </ul>
           
             <ul class="nav navbar-nav pull-right">
@@ -38,6 +38,13 @@
         </div>
 		</div>
 	</div>
+<div class="fluid-container search-container">
+	<div class="container">
+		<div class="search-input">
+			<input type="text" id="query" name="query" placeholder="Type your question here" ng-model="searchKey"><span><i class="fa fa-search"></i></span>
+		</div>
+	</div>
+</div>
 
 <div class="container wrapper-content">
 	<div class="page-body">
@@ -54,39 +61,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-						<div class="panel panel-info" ng-controller="Chart2Ctrl">
-							<div class="panel-heading"><h5>{{title}}</h5></div>
-							<div class="panel-body">
-								<div>
-									<highchart config="chartConfig" ></highchart>
-								</div>
-							</div>
-						</div>
-					</div>
 				</div>
-				<div class="row">
-					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-						<div class="panel panel-info" ng-controller="Chart3Ctrl">
-							<div class="panel-heading"><h5>{{title}}</h5></div>
-							<div class="panel-body">
-								<div>
-									<highchart config="chartConfig" ></highchart>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-						<div class="panel panel-info" ng-controller="Chart4Ctrl">
-							<div class="panel-heading"><h5>{{title}}</h5></div>
-							<div class="panel-body">
-								<div>
-									<highchart config="chartConfig" ></highchart>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+				
 			</div>
 		</div>
 	</div>
