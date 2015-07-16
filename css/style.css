@@ -50,3 +50,11 @@ body{
 .search-input >span>i {
   color:#fff;
 }
+.search-ul{
+  width: 48%;
+  margin-left: 15px;
+}
+.search-ul >li {
+  width: 100%;
+  padding-top: 7px;
+}
