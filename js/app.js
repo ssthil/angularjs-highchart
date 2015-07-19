@@ -210,3 +210,19 @@ app.controller('Chart4Ctrl', function($scope){
         }]
 	};
 })
+//Analyse
+app.controller('AnalyseCtrl', ['$scope', function($scope) {
+  $scope.analysis = [{
+    title: "Profit Chart",
+    name:"01"
+  }, {
+    title: "Sales Chart",
+    name:"02"
+  }, {
+    title: "Expense Chart",
+    name:"03"
+  }, {
+    title: "Chris",
+    name:"04"
+  }]
+}]);

@@ -4,11 +4,9 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>AngularJS Highcharts Dashboard</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
-	<link href='http://fonts.googleapis.com/css?family=Sanchez' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="lib/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="lib/font-awesome/font-awesome.min.css">
+	<link href='css/fonts.css' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/customized.css">
 </head>
@@ -41,7 +39,7 @@
 <div class="fluid-container search-container">
 	<div class="container">
 		<div class="search-input">
-			<input type="text" id="query" name="query" placeholder="Type your question here" ng-model="searchKey"><span><i class="fa fa-search"></i></span>
+			<input type="text" placeholder="Type your question here" ng-model="searchKey"><span><i class="fa fa-search"></i></span>
 		</div>
 	</div>
 </div>
@@ -50,13 +48,13 @@
 	<div class="page-body">
 		<div class="row">
 			<div class="col-lg-12 clo-md-12 colsm-12 col-xs-12">
-				<div class="row">
-					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-						<div class="panel panel-info" ng-controller="Chart1Ctrl">
-							<div class="panel-heading"><h5>{{title}}</h5></div>
+				<div class="row" ng-controller="AnalyseCtrl" >
+					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" ng-repeat="analyse in analysis | filter:searchKey " ng-show="searchKey">
+						<div class="panel panel-info">
+							<div class="panel-heading"><h5>{{analyse.title}}</h5></div>
 							<div class="panel-body">
 								<div>
-									<highchart config="chartConfig" ></highchart>
+									{{analyse.name}}
 								</div>
 							</div>
 						</div>
@@ -73,10 +71,10 @@
 		<p>© 2015 Einsights All rights reserved.</p>
 	</div>
 </div>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
-	<script src="https://code.highcharts.com/highcharts.js"></script>
-	<script src="http://pablojim.github.io/highcharts-ng/javascripts/highcharts-ng.js"></script>
+	<script src="lib/js/jquery.min.js"></script>
+	<script src="lib/js/angular.min.js"></script>
+	<script src="lib/js/highcharts.js"></script>
+	<script src="lib/js/highcharts-ng.js"></script>
 	<script src="js/app.js"></script>
 	<script src="js/common.js"></script>
 </body>
