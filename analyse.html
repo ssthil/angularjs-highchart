@@ -51,10 +51,11 @@
 				<div class="row" ng-controller="AnalyseCtrl" >
 					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" ng-repeat="analyse in analysis | filter:searchKey " ng-show="searchKey">
 						<div class="panel panel-info">
-							<div class="panel-heading"><h5>{{analyse.title}}</h5></div>
+							<div class="panel-heading"><h5>{{analyse.title}} <span class="{{analyse.styleClass}}">{{analyse.desc[0]}} </span></h5></div>
 							<div class="panel-body">
 								<div>
-									{{analyse.name}}
+									
+									<p>{{analyse.desc[1]}}</p>
 								</div>
 							</div>
 						</div>

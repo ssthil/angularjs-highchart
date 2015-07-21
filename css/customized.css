@@ -63,6 +63,10 @@ color: #151C22;
 .footer p {
   margin: 15px 0;
 }
+.panel-heading>h5>span{
+  float: right;
+  padding: 4px 8px;
+}
 /*** font awesome ***/
 .fa-lg {
   font-size: 1.6em;

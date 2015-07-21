@@ -214,15 +214,19 @@ app.controller('Chart4Ctrl', function($scope){
 app.controller('AnalyseCtrl', ['$scope', function($scope) {
   $scope.analysis = [{
     title: "Profit Chart",
-    name:"01"
+    styleClass:"label label-info",
+    desc:["Every month profit","Profit margin is very useful when comparing companies in similar industries. Better control over its costs compared to its competitors."]
   }, {
     title: "Sales Chart",
-    name:"02"
+    styleClass:"label label-warning",
+    desc:["Every month sales","A sale is the exchange of a commodity for money or service in return for money or the action of selling something."]
   }, {
-    title: "Expense Chart",
-    name:"03"
+    title: "Expenses Chart",
+    styleClass:"label label-danger",
+    desc:["Every month expenses","In common usage, an expense or expenditure is an outflow of money to another person or group to pay for an item or service, or for a category of costs."]
   }, {
-    title: "Chris",
-    name:"04"
-  }]
+    title: "Available Goods",
+    styleClass:"label label-success",
+    desc:["Every month available goods","Notice that purchases and production might not be the same throughout the year, since purchase cost and production cost might vary during the year."]
+  }];
 }]);
